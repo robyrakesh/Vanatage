@@ -1,0 +1,33 @@
+{
+  "name": "1.38.1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf allure-results && rimraf allure-report && rimraf test-results && rimraf playwright-report && rimraf junit-results",
+    "play-report": "npx playwright show-report",
+    "allure-report": "allure generate ./allure-results --clean",
+    "open-report": "npm run allure-report && allure open ./allure-report",
+    "firefox": "npm run clean && npx playwright test --project=firefox",
+    "chromium": "npx playwright test --project=chromium",
+    "webkit": "npx playwright test --project=webkit",
+    "test": "npm run clean && npx playwright test",
+    "test-head": "npm run clean && npx playwright test --headed",
+    "reinstall": "npx playwright install",
+    "install-deps": "npx playwright install-deps"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.43.0",
+    "@types/node": "^20.12.7",
+    "allure-commandline": "^2.24.0",
+    "allure-playwright": "^2.8.1"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^8.1.0",
+    "dotenv": "^16.3.1",
+    "rimraf": "^5.0.1"
+  }
+}
