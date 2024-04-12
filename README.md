@@ -5,8 +5,8 @@ e2e tests for Vantage marketing web app targeting the login and contactUs page f
 
 ## Allure Reports
 
-There are few jobs defined in the e2e.yml workflow, which will take care of creating a test report using allure and deploying it to the Github Page server. So, we have a publicliy available free test reporting dashboard which can be accessed by anyone. Link to the test report :- https://robyrakesh.github.io/Vanatge/
-
+There are few jobs defined in the e2e.yml workflow, which will take care of creating a test report using allure and deploying it to the Github Page server. So, we have a publicliy available free test reporting dashboard which can be accessed by anyone. Link to the test report :- [https://robyrakesh.github.io/Vanatge/
+](https://robyrakesh.github.io/Vanatage/)
 ![Screenshot 2024-04-12 at 2 20 14 PM](https://github.com/robyrakesh/Vanatage/assets/47828587/3e1ce27b-017f-4597-ab5e-d3f9b4d46081)
 
 ## Available Scripts
