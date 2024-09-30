@@ -28,6 +28,7 @@ jobs:
       - run:
           name: Generate Allure Report
           command: npm run allure-report
+          when: always
       - run:
           name: Deploy Allure Report to GitHub Pages
           command: npm run deploy
