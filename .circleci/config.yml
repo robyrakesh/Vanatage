@@ -38,12 +38,7 @@ jobs:
 workflows:
   build-and-test:
     when:
-      not:
-        or:
-          - equal: [<< pipeline.git.branch >>, << pipeline.parameters.main-branch >>]
-          - matches:
-              pattern: << pipeline.parameters.release-branch-pattern >>
-              value: << pipeline.git.branch >>
+      - equal: [<< pipeline.git.branch >>, << pipeline.parameters.master-branch >>]
     jobs:
       - run-playwright-test
    
