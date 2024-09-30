@@ -23,9 +23,6 @@ jobs:
           name: Check Java version
           command: java -version
       - run:
-          name: Install Allure CLI
-          command: npm install -g allure-commandline
-      - run:
           name: Run Playwright tests 
           command: npm run test
       - run:
