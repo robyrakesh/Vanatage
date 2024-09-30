@@ -1,10 +1,14 @@
-# This config was automatically generated from your source code
-# Stacks detected: cicd:github-actions:.github/workflows,deps:node:.
 version: 2.1
 orbs:
   node: circleci/node@5
+executors:
+  node-executor:
+    docker:
+      - image: circleci/node:14-browsers  
+    working_directory: ~/repo
 jobs:
   run-playwright-test:
+    executor: node-executor
     steps:
       - checkout
       - run: npm i -D @playwright/test
