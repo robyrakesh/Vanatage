@@ -37,8 +37,6 @@ jobs:
           command: npm run deploy
 workflows:
   build-and-test:
-    when:
-      - equal: [<< pipeline.git.branch >>, << pipeline.parameters.master-branch >>]
     jobs:
       - run-playwright-test
    
