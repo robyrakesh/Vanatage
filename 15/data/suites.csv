@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Mon Sep 30 18:47:48 GMT 2024","Mon Sep 30 18:47:50 GMT 2024","2031","Vantage-e2e-tests-chrome","login.spec.ts","login","","","Unsuccessful Login",""
+"passed","Mon Sep 30 18:47:24 GMT 2024","Mon Sep 30 18:47:27 GMT 2024","2691","Vantage-e2e-tests-chrome","contactUs.spec.ts","ContactUs","","","Unsuccessful Form Submission",""
+"failed","Mon Sep 30 18:47:36 GMT 2024","Mon Sep 30 18:47:38 GMT 2024","2127","Vantage-e2e-tests-chrome","login.spec.ts","login","","","Successful Login",""
+"passed","Mon Sep 30 18:47:19 GMT 2024","Mon Sep 30 18:47:24 GMT 2024","5525","Vantage-e2e-tests-chrome","contactUs.spec.ts","ContactUs","","","Successful Form Submission",""
