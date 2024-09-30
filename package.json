@@ -8,6 +8,7 @@
     "play-report": "npx playwright show-report",
     "allure-report": "allure generate ./allure-results --clean",
     "open-report": "npm run allure-report && allure open ./allure-report",
+    "deploy": "gh-pages -d allure-report",
     "firefox": "npm run clean && npx playwright test --project=firefox",
     "chromium": "npx playwright test --project=chromium",
     "webkit": "npx playwright test --project=webkit",
@@ -23,7 +24,8 @@
     "@playwright/test": "^1.43.0",
     "@types/node": "^20.12.7",
     "allure-commandline": "^2.30.0",
-    "allure-playwright": "^2.8.1"
+    "allure-playwright": "^2.8.1",
+    "gh-pages": "^6.1.1"
   },
   "dependencies": {
     "@faker-js/faker": "^8.1.0",
