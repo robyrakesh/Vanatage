@@ -23,6 +23,11 @@ jobs:
           name: Check Java version
           command: java -version
       - run:
+          name: Set Git Identity
+          command: |
+            git config --global user.email "robyrakesh1@gmail.com"
+            git config --global user.name "robyrakesh"
+      - run:
           name: Run Playwright tests 
           command: npm run test
       - run:
